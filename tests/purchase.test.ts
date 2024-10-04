@@ -2,7 +2,7 @@ import test from "@playwright/test";
 import { TestScope } from "../testscope";
 
 test.describe('User is able to puchase product', () => {
-    test.only('purchase now', async({page}) => {
+    test('purchase now', async({page}) => {
         const tester = new TestScope(page);
         await page.goto('/');
 
