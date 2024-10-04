@@ -1,0 +1,21 @@
+{
+  "name": "automationexercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "env-cmd -f ./.env.chrome playwright test ./tests",
+    "test:sample": "playwright test ./tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-cmd": "^10.1.0"
+  }
+}
